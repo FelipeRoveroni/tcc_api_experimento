@@ -2,7 +2,7 @@
 name = "tcc-api-versioning-experiment"
 version = "1.0.0"
 description = "Experimento controlado sobre versionamento de APIs REST"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 dependencies = [
     "fastapi==0.141.1",
     "httpx2==2.13.1",

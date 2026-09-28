@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from uuid import uuid4
 
@@ -128,7 +128,7 @@ def execute() -> list[dict[str, object]]:
                 rows.append(
                     {
                         "execucao_id": str(uuid4()),
-                        "data_hora_utc": datetime.now(UTC).isoformat(),
+                        "data_hora_utc": datetime.now(timezone.utc).isoformat(),
                         "estrategia": strategy.value,
                         "cenario": scenario.value,
                         "legado_v1_status_http": legacy_response.status_code,
@@ -162,7 +162,7 @@ def main() -> None:
         "--output",
         type=Path,
         default=Path("results")
-        / f"experimento_{datetime.now(UTC).strftime('%Y%m%d_%H%M%S')}.csv",
+        / f"experimento_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}.csv",
     )
     args = parser.parse_args()
     output = save_csv(execute(), args.output)

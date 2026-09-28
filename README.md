@@ -18,7 +18,7 @@ executada isoladamente em três cenários:
 
 ## Execução local
 
-Requer Python 3.11 ou superior.
+Requer Python 3.10 ou superior.
 
 ```bash
 python -m venv .venv
