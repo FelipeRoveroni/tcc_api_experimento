@@ -1,0 +1,20 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./results:/app/results
+
+  tests:
+    build: .
+    profiles: ["test"]
+    command: pytest -q
+
+  experiment:
+    build: .
+    profiles: ["experiment"]
+    command: python -m experiment.runner
+    volumes:
+      - ./results:/app/results
+

@@ -1,0 +1,10 @@
+execucao_id,data_hora_utc,estrategia,cenario,legado_v1_status_http,legado_v1_contrato_valido,legado_forcado_v2_status_http,legado_forcado_v2_contrato_valido,falhas_explicitas,erros_silenciosos,adaptado_v2_status_http,adaptado_v2_contrato_valido,compatibilidade_legado_percentual
+51dd4268-4853-4a57-89a5-0930afa64fce,2026-09-25T11:34:02.305083+00:00,url,c1,200,True,200,False,0,1,201,True,100.0
+66be22dc-a120-4a09-a297-0251f71cbce3,2026-09-25T11:34:02.307840+00:00,url,c2,200,True,200,False,0,1,201,True,100.0
+70ebf528-6be2-426f-834e-a27aa59e9581,2026-09-25T11:34:02.310326+00:00,url,c3,200,True,422,False,1,0,201,True,100.0
+7216fdd9-4a86-428c-bf05-fc408cef2a03,2026-09-25T11:34:02.313285+00:00,header,c1,200,True,200,False,0,1,201,True,100.0
+a9f2419b-6a96-40b9-8509-8e1d030fbd18,2026-09-25T11:34:02.315891+00:00,header,c2,200,True,200,False,0,1,201,True,100.0
+c6e2d045-dcda-4bfc-b790-91246e1a2f95,2026-09-25T11:34:02.318954+00:00,header,c3,200,True,422,False,1,0,201,True,100.0
+44a7fa40-b1a0-4940-a34f-c0e8fd8f4412,2026-09-25T11:34:02.322064+00:00,query,c1,200,True,200,False,0,1,201,True,100.0
+18e1f201-d98f-4463-9291-b22c931d2a2a,2026-09-25T11:34:02.324786+00:00,query,c2,200,True,200,False,0,1,201,True,100.0
+4a656756-6e76-439a-bb90-15d58d9d2c99,2026-09-25T11:34:02.327785+00:00,query,c3,200,True,422,False,1,0,201,True,100.0
