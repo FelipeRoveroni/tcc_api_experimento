@@ -88,6 +88,10 @@ registrados durante a alteração real do cliente, pois esses valores dependem d
 execução humana e não devem ser inventados. Use o arquivo
 `results/coleta_manual.csv` para preencher essas métricas durante cada adaptação.
 
+Para realizar as nove migrações partindo de um cliente v1 independente e
+comprovar separadamente listagem, consulta por ID e criação na v2, siga
+[MIGRACAO.md](MIGRACAO.md). O `experiment.runner` não substitui essas rodadas.
+
 Antes de cada rodada, registre a ordem de execução. Depois dos testes, preserve:
 
 - o CSV automático e a ficha manual preenchida;
