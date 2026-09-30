@@ -1,15 +1,13 @@
-"""Cliente v1 usado como ponto de partida das migrações medidas.
+"""Cliente de ensaio migrado para v2 no cenário C2 por URL.
 
-Em cada rodada, parta do mesmo commit e altere apenas este arquivo para v2.
-Não copie a implementação de AdaptedProductClient: ela valida a API, mas não
-representa o esforço de adaptação deste cliente.
+Em cada nova rodada, parta do mesmo commit v1 registrado como BASE.
 """
 
 from __future__ import annotations
 
 from typing import Any
 
-from app.domain import ProductV1, Scenario, Strategy
+from app.domain import ProductC2V2, Scenario, Strategy
 from clients.product_client import HttpClient
 
 
@@ -20,9 +18,9 @@ class TrialProductClient:
         self.scenario = scenario
 
     def _target(self) -> tuple[str, dict[str, Any]]:
-        """Seletores v1: adapte somente o ramo da estratégia da rodada."""
+        """Seleciona v2 por URL na rodada URL/C2."""
         if self.strategy is Strategy.URL:
-            return f"/api/url/{self.scenario.value}/v1/produtos", {}
+            return f"/api/url/{self.scenario.value}/v2/produtos", {}
         if self.strategy is Strategy.HEADER:
             return (
                 f"/api/header/{self.scenario.value}/produtos",
@@ -33,22 +31,20 @@ class TrialProductClient:
             {"params": {"version": 1}},
         )
 
-    def list_products(self) -> list[ProductV1]:
+    def list_products(self) -> list[ProductC2V2]:
         path, kwargs = self._target()
         response = self.http.get(path, **kwargs)
         response.raise_for_status()
-        return [ProductV1.model_validate(item) for item in response.json()]
+        return [ProductC2V2.model_validate(item) for item in response.json()]
 
-    def get_product(self, product_id: int) -> ProductV1:
+    def get_product(self, product_id: int) -> ProductC2V2:
         path, kwargs = self._target()
         response = self.http.get(f"{path}/{product_id}", **kwargs)
         response.raise_for_status()
-        return ProductV1.model_validate(response.json())
+        return ProductC2V2.model_validate(response.json())
 
-    def create_product(self, *, nome: str, preco: float, estoque: int) -> ProductV1:
+    def create_product(self, *, nome: str, preco: float) -> ProductC2V2:
         path, kwargs = self._target()
-        response = self.http.post(
-            path, json={"nome": nome, "preco": preco, "estoque": estoque}, **kwargs
-        )
+        response = self.http.post(path, json={"nome": nome, "preco": preco}, **kwargs)
         response.raise_for_status()
-        return ProductV1.model_validate(response.json())
+        return ProductC2V2.model_validate(response.json())
