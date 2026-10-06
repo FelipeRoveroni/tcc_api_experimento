@@ -84,9 +84,11 @@ estratégia e cenário. Ele registra:
 - taxa de compatibilidade do cliente legado.
 
 Tempo de adaptação, quantidade de arquivos e linhas modificadas devem ser
-registrados durante a alteração real do cliente, pois esses valores dependem da
-execução humana e não devem ser inventados. Use o arquivo
-`results/coleta_manual.csv` para preencher essas métricas durante cada adaptação.
+registrados durante a alteração real do cliente. A ficha
+[results/coleta_manual.csv](results/coleta_manual.csv) contém as nove migrações
+coletadas em 30/09/2026. Para uma nova coleta, copie
+[results/coleta_manual_modelo.csv](results/coleta_manual_modelo.csv) para um
+arquivo com nome próprio, preservando os registros originais.
 
 Para realizar as nove migrações partindo de um cliente v1 independente e
 comprovar separadamente listagem, consulta por ID e criação na v2, siga
@@ -99,6 +101,21 @@ Antes de cada rodada, registre a ordem de execução. Depois dos testes, preserv
 - o identificador do commit usado na API e no cliente;
 - as versões obtidas com `python --version` e `python -m pip freeze`;
 - eventuais logs ou capturas que expliquem falhas e erros silenciosos.
+
+## Evidências do TCC
+
+Os registros utilizados no trabalho estão disponíveis em:
+
+| Arquivo | Coleta | Correspondência |
+| --- | --- | --- |
+| [execucao_validacao_final.csv](results/execucao_validacao_final.csv) | 25/09/2026, nove observações automáticas | Tabela 3 |
+| [experimento_20260928_112054.csv](results/experimento_20260928_112054.csv) | 28/09/2026, nove observações automáticas | Tabela 3 |
+| [coleta_manual.csv](results/coleta_manual.csv) | 30/09/2026, nove migrações assistidas | Tabelas 4 e 5 |
+
+O [guia de migração](MIGRACAO.md) identifica a revisão inicial, os nove commits
+dos clientes e os comandos de conferência e reprodução. As duas execuções
+automáticas permaneceram distintas das nove migrações. Os intervalos registrados
+não permitem estabelecer uma estratégia superior em esforço.
 
 ## Exemplos de seleção da versão
 
