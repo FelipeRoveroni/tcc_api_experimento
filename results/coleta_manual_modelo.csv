@@ -1,0 +1,10 @@
+estrategia,cenario,ordem_execucao,data_hora_inicio,data_hora_fim,arquivos_modificados,linhas_adicionadas,linhas_removidas,tempo_adaptacao_min,commit_api,commit_cliente,observacoes
+url,c1,,,,,,,,,,
+url,c2,,,,,,,,,,
+url,c3,,,,,,,,,,
+header,c1,,,,,,,,,,
+header,c2,,,,,,,,,,
+header,c3,,,,,,,,,,
+query,c1,,,,,,,,,,
+query,c2,,,,,,,,,,
+query,c3,,,,,,,,,,
