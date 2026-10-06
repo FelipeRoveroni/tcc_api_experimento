@@ -1,10 +1,10 @@
 estrategia,cenario,ordem_execucao,data_hora_inicio,data_hora_fim,arquivos_modificados,linhas_adicionadas,linhas_removidas,tempo_adaptacao_min,commit_api,commit_cliente,observacoes
-url,c1,,,,,,,,,,
-url,c2,,,,,,,,,,
-url,c3,,,,,,,,,,
-header,c1,,,,,,,,,,
-header,c2,,,,,,,,,,
-header,c3,,,,,,,,,,
-query,c1,,,,,,,,,,
-query,c2,,,,,,,,,,
-query,c3,,,,,,,,,,
+url,c1,1,2026-09-30T09:52:22.4069792-03:00,2026-09-30T09:53:27.5301362-03:00,1,16,14,1.08538595,e9d13c1cd4257f133934ab6d1d376a328f3a7d58,8b9b2a319b23c46f25e93a2908d2f457135f1c16,Aplicação e validação de migração com auxílio de IA. Antes: 3 failed. Depois: 3 passed. Testes finais: 0.07 s.
+url,c2,6,2026-09-30T11:57:39.9641276-03:00,2026-09-30T11:58:22.7295284-03:00,1,12,16,0.71275668,e9d13c1cd4257f133934ab6d1d376a328f3a7d58,7be47babb4f4cc8414f484adeb98adc886892615,Aplicação e validação de migração com auxílio de IA. Antes: 3 failed. Depois: 3 passed. Testes finais: 0.09 s.
+url,c3,8,2026-09-30T13:45:17.3252313-03:00,2026-09-30T13:45:41.7827109-03:00,1,21,14,0.40762466,e9d13c1cd4257f133934ab6d1d376a328f3a7d58,92e6dbb98d886b925332fba9352f85ca71f47345,Aplicação e validação de migração com auxílio de IA. Antes: 3 failed. Depois: 3 passed. Testes finais: 0.11 s.
+header,c1,2,2026-09-30T11:02:27.6518076-03:00,2026-09-30T11:03:01.5049421-03:00,1,16,14,0.564218908333333,e9d13c1cd4257f133934ab6d1d376a328f3a7d58,4ad305b42562db1b56b29b6cb80a5c4384c7d79e,Aplicação e validação de migração com auxílio de IA. Antes: 3 failed. Depois: 3 passed. Testes finais: 0.07 s.
+header,c2,4,2026-09-30T11:21:51.0806666-03:00,2026-09-30T11:22:49.5776453-03:00,1,12,16,0.974949645,e9d13c1cd4257f133934ab6d1d376a328f3a7d58,ce6d6a3167c6375af7b4958ae6432fbd560fc079,Aplicação e validação de migração com auxílio de IA. Antes: 3 failed. Depois: 3 passed. Testes finais: 0.09 s.
+header,c3,9,2026-09-30T13:51:40.1188872-03:00,2026-09-30T13:52:12.2995763-03:00,1,21,14,0.536344818333333,e9d13c1cd4257f133934ab6d1d376a328f3a7d58,ac34f07b5cc65e4f6a2223fc663574f6d4f02ee7,Aplicação e validação de migração com auxílio de IA. Antes: 3 failed. Depois: 3 passed. Testes finais: 0.15 s.
+query,c1,3,2026-09-30T11:10:39.6724176-03:00,2026-09-30T11:11:18.7940806-03:00,1,16,14,0.652027716666667,e9d13c1cd4257f133934ab6d1d376a328f3a7d58,1d69b16e294d0f0c1a466065163b9ae13017e947,Aplicação e validação de migração com auxílio de IA. Antes: 3 failed. Depois: 3 passed. Testes finais: 0.07 s.
+query,c2,5,2026-09-30T11:50:48.2144296-03:00,2026-09-30T11:51:09.9891054-03:00,1,12,16,0.362911263333333,e9d13c1cd4257f133934ab6d1d376a328f3a7d58,1fdd80a50d1ef363b312ff7725f833ddf896206c,Aplicação e validação de migração com auxílio de IA. Antes: 3 failed. Depois: 3 passed. Testes finais: 0.06 s.
+query,c3,7,2026-09-30T12:07:39.7567307-03:00,2026-09-30T12:07:57.8710491-03:00,1,21,14,0.301905306666667,e9d13c1cd4257f133934ab6d1d376a328f3a7d58,bf79fa663ebc69b722cf4d773dfeae9d540fcd61,Aplicação e validação de migração com auxílio de IA. Antes: 3 failed. Depois: 3 passed. Testes finais: 0.08 s.
